@@ -1,0 +1,534 @@
+2024-05-30 13:24:47,097 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2024-05-30 13:24:47,103 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'update']
+2024-05-30 13:24:47,106 DEBUG    root            Running [gcloud.components.update] with arguments: [--allow-no-backup: "True", --compile-python: "True", --quiet: "True", COMPONENT-IDS:6: "['core', 'gcloud-deps', 'bq', 'gcloud', 'gcloud-crc32c', 'gsutil']"]
+2024-05-30 13:26:07,199 INFO     ___FILE_ONLY___ Beginning update. This process may take several minutes.
+
+2024-05-30 13:26:07,227 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-30 13:26:07,305 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 222658
+2024-05-30 13:26:07,328 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,328 INFO     ___FILE_ONLY___ 
+Your current Google Cloud CLI version is: 478.0.0
+
+2024-05-30 13:26:07,328 INFO     ___FILE_ONLY___ Installing components from version: 478.0.0
+
+2024-05-30 13:26:07,328 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,329 DEBUG    root            Chosen display Format:table[box,title="These components will be removed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-05-30 13:26:07,330 DEBUG    root            Chosen display Format:table[box,title="These components will be updated."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-05-30 13:26:07,330 DEBUG    root            Chosen display Format:table[box,title="These components will be installed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-05-30 13:26:07,486 INFO     ___FILE_ONLY___ ┌─────────────────────────────────────────────────────────────────────────────┐
+2024-05-30 13:26:07,486 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,486 INFO     ___FILE_ONLY___ │                     These components will be installed.                     │
+2024-05-30 13:26:07,486 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,487 INFO     ___FILE_ONLY___ ├─────────────────────────────────────────────────────┬────────────┬──────────┤
+2024-05-30 13:26:07,487 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,487 INFO     ___FILE_ONLY___ │                         Name                        │  Version   │   Size   │
+2024-05-30 13:26:07,487 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,487 INFO     ___FILE_ONLY___ ├─────────────────────────────────────────────────────┼────────────┼──────────┤
+2024-05-30 13:26:07,487 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,487 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,487 INFO     ___FILE_ONLY___ BigQuery Command Line Tool                         
+2024-05-30 13:26:07,487 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,488 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,488 INFO     ___FILE_ONLY___      2.1.5
+2024-05-30 13:26:07,488 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,488 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,488 INFO     ___FILE_ONLY___  1.7 MiB
+2024-05-30 13:26:07,488 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,488 INFO     ___FILE_ONLY___ │
+2024-05-30 13:26:07,488 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,489 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,489 INFO     ___FILE_ONLY___ BigQuery Command Line Tool (Platform Specific)     
+2024-05-30 13:26:07,489 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,489 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,489 INFO     ___FILE_ONLY___    2.0.101
+2024-05-30 13:26:07,489 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,489 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,489 INFO     ___FILE_ONLY___  < 1 MiB
+2024-05-30 13:26:07,489 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___ │
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___ Bundled Python 3.11                                
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___     3.11.8
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___ 75.1 MiB
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___ │
+2024-05-30 13:26:07,490 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,491 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,491 INFO     ___FILE_ONLY___ Cloud Storage Command Line Tool                    
+2024-05-30 13:26:07,491 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,491 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,491 INFO     ___FILE_ONLY___       5.29
+2024-05-30 13:26:07,491 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,491 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,491 INFO     ___FILE_ONLY___ 11.3 MiB
+2024-05-30 13:26:07,491 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,492 INFO     ___FILE_ONLY___ │
+2024-05-30 13:26:07,492 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,492 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,492 INFO     ___FILE_ONLY___ Cloud Storage Command Line Tool (Platform Specific)
+2024-05-30 13:26:07,492 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,492 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,492 INFO     ___FILE_ONLY___       5.27
+2024-05-30 13:26:07,492 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,493 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,493 INFO     ___FILE_ONLY___  < 1 MiB
+2024-05-30 13:26:07,493 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,493 INFO     ___FILE_ONLY___ │
+2024-05-30 13:26:07,493 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,493 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,493 INFO     ___FILE_ONLY___ Google Cloud CLI Core Libraries (Platform Specific)
+2024-05-30 13:26:07,493 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,493 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,494 INFO     ___FILE_ONLY___ 2024.01.06
+2024-05-30 13:26:07,494 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,494 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,494 INFO     ___FILE_ONLY___  < 1 MiB
+2024-05-30 13:26:07,494 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,494 INFO     ___FILE_ONLY___ │
+2024-05-30 13:26:07,494 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,494 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,494 INFO     ___FILE_ONLY___ Google Cloud CRC32C Hash Tool                      
+2024-05-30 13:26:07,495 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,495 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,495 INFO     ___FILE_ONLY___      1.0.0
+2024-05-30 13:26:07,495 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,495 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,495 INFO     ___FILE_ONLY___  1.2 MiB
+2024-05-30 13:26:07,495 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,495 INFO     ___FILE_ONLY___ │
+2024-05-30 13:26:07,495 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,496 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,496 INFO     ___FILE_ONLY___ gcloud cli dependencies                            
+2024-05-30 13:26:07,496 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,496 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,496 INFO     ___FILE_ONLY___ 2021.04.16
+2024-05-30 13:26:07,496 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,496 INFO     ___FILE_ONLY___ │ 
+2024-05-30 13:26:07,496 INFO     ___FILE_ONLY___  < 1 MiB
+2024-05-30 13:26:07,496 INFO     ___FILE_ONLY___  
+2024-05-30 13:26:07,497 INFO     ___FILE_ONLY___ │
+2024-05-30 13:26:07,497 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,497 INFO     ___FILE_ONLY___ └─────────────────────────────────────────────────────┴────────────┴──────────┘
+2024-05-30 13:26:07,497 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,497 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:07,502 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-30 13:26:07,592 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/RELEASE_NOTES HTTP/1.1" 200 1220927
+2024-05-30 13:26:07,670 INFO     ___FILE_ONLY___ For the latest full release notes, please visit:
+  https://cloud.google.com/sdk/release_notes
+
+
+2024-05-30 13:26:07,674 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:07,674 INFO     ___FILE_ONLY___ ╠═ Creating update staging area                             ═╣
+
+2024-05-30 13:26:07,674 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:07,675 INFO     ___FILE_ONLY___ ══════
+2024-05-30 13:26:07,675 INFO     ___FILE_ONLY___ ══════
+2024-05-30 13:26:07,675 INFO     ___FILE_ONLY___ ══════
+2024-05-30 13:26:08,171 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:08,264 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:08,359 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:08,439 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:08,524 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:08,606 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:08,668 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:08,730 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:08,804 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:08,878 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:08,946 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,010 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,069 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,157 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,218 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,319 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,391 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,539 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,608 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,665 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,707 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,748 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,795 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,840 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,896 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,945 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:09,996 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:10,092 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:10,316 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:10,389 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:10,457 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:10,530 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:10,603 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:10,665 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:10,736 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:10,812 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:10,882 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:10,947 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,025 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,110 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,186 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,264 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,264 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:11,332 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:11,332 INFO     ___FILE_ONLY___ ╠═ Installing: BigQuery Command Line Tool                   ═╣
+
+2024-05-30 13:26:11,332 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:11,336 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-30 13:26:11,469 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-bq-20240524155722.tar.gz HTTP/1.1" 200 1789662
+2024-05-30 13:26:11,481 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,482 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,482 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,482 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,482 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,482 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,483 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,483 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,483 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,483 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,483 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,483 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,484 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,484 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,484 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,484 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,484 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,484 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,485 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,485 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,485 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,485 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,485 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,485 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,486 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,486 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,486 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,486 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,486 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,486 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,632 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,638 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,644 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,649 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,653 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,658 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,663 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,667 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,673 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,678 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,682 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,686 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,691 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,698 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,701 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,706 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,714 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,718 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,725 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,730 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,736 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,742 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,746 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,751 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,755 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,760 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,765 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,769 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,774 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,779 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:11,779 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:11,798 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:11,799 INFO     ___FILE_ONLY___ ╠═ Installing: BigQuery Command Line Tool (Platform Spec... ═╣
+
+2024-05-30 13:26:11,799 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:11,803 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-30 13:26:11,879 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-bq-nix-20240106004423.tar.gz HTTP/1.1" 200 2026
+2024-05-30 13:26:11,880 INFO     ___FILE_ONLY___ ══════════════════════════════
+2024-05-30 13:26:11,881 INFO     ___FILE_ONLY___ ══════════════════════════════
+2024-05-30 13:26:11,881 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:11,891 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:11,891 INFO     ___FILE_ONLY___ ╠═ Installing: Bundled Python 3.11                          ═╣
+
+2024-05-30 13:26:11,891 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:11,897 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-05-30 13:26:11,897 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:11,899 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:11,900 INFO     ___FILE_ONLY___ ╠═ Installing: Bundled Python 3.11                          ═╣
+
+2024-05-30 13:26:11,900 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:11,904 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-30 13:26:12,041 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-bundled-python3-unix-linux-x86_64-20240510142152.tar.gz HTTP/1.1" 200 78697278
+2024-05-30 13:26:12,401 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,404 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,408 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,412 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,415 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,419 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,422 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,426 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,429 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,433 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,436 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,440 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,443 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,447 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,450 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,454 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,457 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,460 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,464 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,467 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,471 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,474 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,478 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,481 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,485 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,488 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,492 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,495 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,499 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:12,503 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:14,953 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:14,982 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,012 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,041 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,071 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,099 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,128 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,157 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,186 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,215 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,243 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,272 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,302 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,331 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,361 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,390 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,421 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,846 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,886 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,942 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:15,985 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:16,150 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:16,299 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:16,341 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:16,386 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:16,461 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:16,500 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:16,548 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:17,741 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:17,774 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:17,775 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:17,895 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:17,895 INFO     ___FILE_ONLY___ ╠═ Installing: Cloud Storage Command Line Tool              ═╣
+
+2024-05-30 13:26:17,895 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:17,899 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-30 13:26:18,037 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-gsutil-20240510142152.tar.gz HTTP/1.1" 200 11893574
+2024-05-30 13:26:18,081 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,082 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,083 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,083 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,084 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,085 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,085 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,086 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,087 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,087 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,088 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,088 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,089 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,090 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,090 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,091 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,091 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,092 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,093 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,093 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,094 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,094 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,095 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,096 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,096 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,097 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,097 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,098 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,099 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,099 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,916 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,957 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:18,988 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,024 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,057 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,085 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,111 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,135 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,156 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,180 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,206 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,242 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,276 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,314 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,340 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,362 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,386 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,413 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,443 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,464 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,489 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,515 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,541 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,562 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,587 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,612 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,666 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,696 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,731 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,757 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:19,757 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:19,841 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:19,841 INFO     ___FILE_ONLY___ ╠═ Installing: Cloud Storage Command Line Tool (Platform... ═╣
+
+2024-05-30 13:26:19,841 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:19,845 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-30 13:26:19,976 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-gsutil-nix-20240106004423.tar.gz HTTP/1.1" 200 2042
+2024-05-30 13:26:19,983 INFO     ___FILE_ONLY___ ══════════════════════════════
+2024-05-30 13:26:19,985 INFO     ___FILE_ONLY___ ══════════════════════════════
+2024-05-30 13:26:19,986 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:19,996 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:19,996 INFO     ___FILE_ONLY___ ╠═ Installing: Default set of gcloud commands               ═╣
+
+2024-05-30 13:26:19,996 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:20,002 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-05-30 13:26:20,003 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:20,005 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:20,005 INFO     ___FILE_ONLY___ ╠═ Installing: Google Cloud CLI Core Libraries (Platform... ═╣
+
+2024-05-30 13:26:20,005 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:20,009 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-30 13:26:20,141 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-core-nix-20240106004423.tar.gz HTTP/1.1" 200 2410
+2024-05-30 13:26:20,142 INFO     ___FILE_ONLY___ ══════════════════════════════
+2024-05-30 13:26:20,144 INFO     ___FILE_ONLY___ ═══════════════
+2024-05-30 13:26:20,144 INFO     ___FILE_ONLY___ ═══════════════
+2024-05-30 13:26:20,144 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:20,154 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:20,154 INFO     ___FILE_ONLY___ ╠═ Installing: Google Cloud CRC32C Hash Tool                ═╣
+
+2024-05-30 13:26:20,154 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:20,158 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-30 13:26:20,293 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-gcloud-crc32c-linux-x86_64-20231215195722.tar.gz HTTP/1.1" 200 1287877
+2024-05-30 13:26:20,304 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,305 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,305 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,305 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,305 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,305 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,306 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,306 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,306 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,306 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,306 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,306 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,306 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,307 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,307 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,307 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,307 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,307 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,307 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,307 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,308 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,308 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,308 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,308 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,308 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,308 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,309 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,309 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,309 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,309 INFO     ___FILE_ONLY___ ═
+2024-05-30 13:26:20,346 INFO     ___FILE_ONLY___ ═══════════════
+2024-05-30 13:26:20,347 INFO     ___FILE_ONLY___ ═══════════════
+2024-05-30 13:26:20,347 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:20,358 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:20,358 INFO     ___FILE_ONLY___ ╠═ Installing: Google Cloud CRC32C Hash Tool                ═╣
+
+2024-05-30 13:26:20,358 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:20,364 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-05-30 13:26:20,364 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:20,367 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:20,367 INFO     ___FILE_ONLY___ ╠═ Installing: gcloud cli dependencies                      ═╣
+
+2024-05-30 13:26:20,367 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:20,371 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-30 13:26:20,502 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-gcloud-deps-linux-x86_64-20210416153011.tar.gz HTTP/1.1" 200 104
+2024-05-30 13:26:20,503 INFO     ___FILE_ONLY___ ══════════════════════════════
+2024-05-30 13:26:20,503 INFO     ___FILE_ONLY___ ══════════════════════════════
+2024-05-30 13:26:20,504 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:20,514 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-30 13:26:20,514 INFO     ___FILE_ONLY___ ╠═ Creating backup and activating new installation          ═╣
+
+2024-05-30 13:26:20,514 INFO     ___FILE_ONLY___ ╚
+2024-05-30 13:26:20,514 DEBUG    root            Attempting to move directory [/tools/google-cloud-sdk] to [/tools/google-cloud-sdk.staging/.install/.backup]
+2024-05-30 13:26:20,514 INFO     ___FILE_ONLY___ ══════════════════════════════
+2024-05-30 13:26:20,514 DEBUG    root            Attempting to move directory [/tools/google-cloud-sdk.staging] to [/tools/google-cloud-sdk]
+2024-05-30 13:26:20,515 INFO     ___FILE_ONLY___ ══════════════════════════════
+2024-05-30 13:26:20,515 INFO     ___FILE_ONLY___ ╝
+
+2024-05-30 13:26:20,519 DEBUG    root            Updating notification cache...
+2024-05-30 13:26:20,519 INFO     ___FILE_ONLY___ 
+
+2024-05-30 13:26:20,521 INFO     ___FILE_ONLY___ Performing post processing steps...
+2024-05-30 13:26:20,522 DEBUG    root            Executing command: ['/tools/google-cloud-sdk/bin/gcloud', 'components', 'post-process']
+2024-05-30 13:30:32,349 DEBUG    ___FILE_ONLY___ 
+2024-05-30 13:30:32,349 DEBUG    ___FILE_ONLY___ 
+2024-05-30 13:30:32,423 INFO     ___FILE_ONLY___ 
+Update done!
+
+
+2024-05-30 13:30:32,426 DEBUG    root            Chosen display Format:none
+2024-05-30 13:30:32,427 INFO     root            Display format: "none"
