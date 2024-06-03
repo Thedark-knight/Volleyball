@@ -1,0 +1,37 @@
+name: Build Kivy App APK
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y python3-pip openjdk-8-jdk unzip zip libffi-dev libssl-dev
+        pip install cython==0.29.19 kivy==1.11.1 buildozer pillow python-docx
+
+    - name: Initialize Buildozer
+      run: buildozer init
+
+    - name: Build APK
+      run: buildozer -v android debug
+
+    - name: Upload APK
+      uses: actions/upload-artifact@v2
+      with:
+        name: apk
+        path: bin/*.apk
